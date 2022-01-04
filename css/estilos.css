@@ -1,0 +1,226 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Red Rose', cursive;
+}
+
+/* MENU PRINCIPAL CON LOGO Y BARRA BUSCADOR*/
+.header{
+    background-color: #0D0D0D;
+    color: white;
+    
+    
+
+}
+/* DECORACIONES DE LINKS A LOS MENUS*/
+.header a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    
+}
+/*COLOR Y POSICIONES DEL MENU*/
+.header__menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BF2C1F;
+    color: white;
+    margin: 0;
+    
+}
+.header__menu--lista{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    color: white;
+    margin: 15px;
+}
+.header__menu--lista--item{
+    list-style: none;
+
+}
+.header__menu--lista--item a{
+    text-decoration: none;
+    color: white;
+}
+
+/*IMAGEN PRINCIPAL DE INICIO*/
+#imagen-Principal{
+    
+    background-image: url(../recursos/fondo-pantalla-principal.jpg);
+    
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: grid;
+    grid-template-areas:
+        "vacio1 titulo1 vacio2"
+        "vacio1 titulo vacio2"
+        "vacio1 texto vacio2";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    color: white; 
+    margin: auto;
+}
+/* TITULO IMAGEN PRINCIPAL DE INICIO*/
+#titulo{
+    grid-area: titulo;
+    font-size: 70px;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+}
+/*PARRAFO IMAGEN PRINCIPAL DE INICIO*/
+#texto{
+    grid-area: texto;
+    font-size: 15px;
+    justify-content: center;
+    text-align: center;
+}
+
+/*CAJAS DE INGRESOS Y POSICIONES NUEVOS INICIO*/
+
+.ingresos{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 10px;
+    width: 18%;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    width: 200px;
+    height: auto;
+    
+
+
+}
+.ingresos__nuevo{
+    background-color: rgb(185, 185, 185);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 10px 10px;
+    margin: 10px; 
+    
+}
+.ingresos__img{
+    width: 200px;
+    max-width: 100%;
+}
+/*CONTENIDO DE CAJAS INICIO*/
+.ingresos__contenido{
+    padding: 10px;
+    display: flex;
+    flex-direction: wrap;
+    justify-content: space-around;
+    height: 100px;
+    font-size: 16px;
+    text-align: center;
+    
+    
+}
+
+
+
+                    /* PESTAÑA AYUDA Y CONTENIDO*/
+.ayuda{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+    flex-direction: column;
+}
+.ayuda__caja{
+    background-color: rgb(185, 185, 185);
+    display: flex;
+    flex-direction: column;
+    margin: 10px 10px;
+}
+.ayuda__titulo{
+    background-color: rgb(185, 185, 185);
+    display: flex;
+    margin: 5px;
+    width: 100%;
+    justify-content: left  ;
+    font-size: 25px;
+
+}
+ayuda__contenido{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    height: 50px;
+    width: 100%;
+    font-size: 18px;
+}
+
+                    /*PESTAÑA CONTACTO Y CONTTENIDO*/
+
+                    /*IMAGEN PRINCIPAL DE CONTACTO*/
+#imagen-Contacto{
+    background-image: url(../recursos/fondo-contacto.jfif);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: grid;
+    grid-template-areas:
+        "vacio3 contacto vacio4"
+        "vacio3 contacto1 vacio4"
+        "vacio3 texto1 vacio4";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    color: white; 
+    margin: auto;
+}
+            /* TITULO IMAGEN PRINCIPAL DE CONTACTO*/
+#contacto{
+    grid-area: contacto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 70px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 200px;
+    
+    
+}
+            /*SUBTITULO IMAGEN PRINCIPAL DE CONTACTO*/
+#contacto1{
+    grid-area: contacto1;
+    font-size: 15px;
+    justify-content: center;
+    text-align: center;
+}
+
+            /*PARRAFO IMAGEN PRINCIPAL DE INICIO*/
+
+#texto1{
+    grid-area: texto1;
+    font-size: 15px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+    
+}
+
+
+
+
+/*DISEÑO DE FOOTER*/
+
+.footer{
+    background-color:#BF2C1F ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0px;
+    flex-direction: column;
+}
