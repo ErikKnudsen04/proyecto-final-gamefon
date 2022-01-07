@@ -4,6 +4,12 @@
     font-family: 'Red Rose', cursive;
 }
 
+body {
+    background-image: linear-gradient(0deg, #0D0D0D, white );
+    background-attachment: fixed;
+    
+}
+
 /* MENU PRINCIPAL CON LOGO Y BARRA BUSCADOR*/
 .header{
     background-color: #0D0D0D;
