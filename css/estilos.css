@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: linear-gradient(0deg, #0D0D0D, white );
+    background-image: linear-gradient(0deg, #d8d8d8, white );
     background-attachment: fixed;
     
 }
@@ -14,7 +14,6 @@ body {
 .header{
     background-color: #0D0D0D;
     color: white;
-    
     
 
 }
@@ -68,6 +67,8 @@ body {
     grid-template-rows: repeat(3, 1fr);
     color: white; 
     margin: auto;
+    
+    
 }
 /* TITULO IMAGEN PRINCIPAL DE INICIO*/
 #titulo{
@@ -76,6 +77,7 @@ body {
     justify-content: center;
     text-align: center;
     padding: 30px;
+    
 }
 /*PARRAFO IMAGEN PRINCIPAL DE INICIO*/
 #texto{
@@ -83,6 +85,7 @@ body {
     font-size: 15px;
     justify-content: center;
     text-align: center;
+
 }
 
 /*CAJAS DE INGRESOS Y POSICIONES NUEVOS INICIO*/
