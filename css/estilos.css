@@ -9,12 +9,22 @@ body {
     background-attachment: fixed;
     
 }
+.navbar{
+    background-color: #0D0D0D;
+    
+    
+
+}
 
 /* MENU PRINCIPAL CON LOGO Y BARRA BUSCADOR*/
+
 .header{
     background-color: #0D0D0D;
     color: white;
     
+}
+.header h1{
+    color: white;
 
 }
 /* DECORACIONES DE LINKS A LOS MENUS*/
