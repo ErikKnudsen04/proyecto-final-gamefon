@@ -196,7 +196,7 @@ ayuda__contenido{
     font-size: 18px;
 }
 
-                    /*PESTAÑA CONTACTO Y CONTTENIDO*/
+                    /*PESTAÑA CONTACTO Y CONTENIDO*/
 
                     /*IMAGEN PRINCIPAL DE CONTACTO*/
 #imagen-Contacto{
@@ -215,6 +215,68 @@ ayuda__contenido{
     margin: auto;
 }
             /* TITULO IMAGEN PRINCIPAL DE CONTACTO*/
+
+.height-100 {
+    height: 100vh
+}
+
+.card {
+    width: 100%;
+    border: none
+}
+
+.form label {
+    font-size: 13px;
+    margin-left: 2px
+}
+
+.form-control {
+    height: 45px;
+    border: 2px solid #BF2C1F
+}
+
+
+.form-control:focus {
+    box-shadow: none;
+    border: 2px solid #BF2C1F
+}
+
+.phone {
+    position: relative
+}
+
+.phone input {
+    padding-left: 29px
+}
+
+.phone i {
+    position: absolute;
+    top: 17px;
+    left: 10px;
+    color: #BF2C1F
+}
+
+.button {
+    height: 50px;
+    background-color: #BF2C1F
+}
+
+.button:hover {
+    background-color: #BF2C1F
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 #contacto{
     grid-area: contacto;
     display: flex;
@@ -249,24 +311,19 @@ ayuda__contenido{
 
 
 
-/*DISEÑO DE FOOTER*/
+    /*DISEÑO DE FOOTER*/
 
-.footer{
-    background-color:#BF2C1F ;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 30px 0px;
-    flex-direction: column;
-}
 
 .footer-dark{
     background-color:#BF2C1F ;
 }
-.footer-dark .item:not(.social) {
+
+.footer-dark .item {
     text-align:center;
     padding-bottom:20px;
-    
+}
+.footer-dark a{
+    text-decoration: none;
 }
 
 
@@ -281,12 +338,7 @@ ayuda__contenido{
 }
 
 .footer-dark .item.text p {
-    opacity:0.6;
     margin-bottom:0;
-}
-
-.footer-dark .item.social {
-    text-align:center;
 }
 
 @media (max-width:991px) {
@@ -295,22 +347,6 @@ ayuda__contenido{
     margin-top:20px;
     }
 }
-
-.footer-dark .item.social > a {
-    font-size:20px;
-    width:36px;
-    height:36px;
-    line-height:36px;
-    display:inline-block;
-    text-align:center;
-    border-radius:50%;
-    box-shadow:0 0 0 1px rgba(255,255,255,0.4);
-    margin:0 8px;
-    color:#fff;
-    opacity:0.75;
-}
-
-
 
 .footer-dark .copyright {
     text-align:center;
