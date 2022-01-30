@@ -1,0 +1,293 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    
+    font-family: 'Red Rose', cursive;
+    background-image: linear-gradient(0deg, #d8d8d8, white );
+    background-attachment: fixed;
+}
+.navbar{
+    background-color: #0D0D0D;
+    
+}
+
+#navbar1 {
+    background-color: #BF2C1F;
+    .navbar-toggler{
+        background-color: black;
+    }
+    .nav-link{
+        color: white;
+        margin: 15px;
+    }
+}
+/* MENU PRINCIPAL CON LOGO Y BARRA BUSCADOR*/
+
+.header{
+    background-color: #0D0D0D;
+    color: white;
+    h1{
+        color: white;
+    }
+}
+
+/*IMAGEN PRINCIPAL DE INICIO*/
+#imagen-Principal{
+    
+    background-image: url(../recursos/fondo-pantalla-principal.jpg);
+    
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: grid;
+    grid-template-areas:
+        "vacio1 titulo1 vacio2"
+        "vacio1 titulo vacio2"
+        "vacio1 texto vacio2";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    color: white; 
+    margin: auto;
+    
+    
+}
+/* TITULO IMAGEN PRINCIPAL DE INICIO*/
+#titulo{
+    grid-area: titulo;
+    font-size: 70px;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    
+}
+/*PARRAFO IMAGEN PRINCIPAL DE INICIO*/
+#texto{
+    grid-area: texto;
+    font-size: 15px;
+    justify-content: center;
+    text-align: center;
+
+}
+
+/*CAJAS DE INGRESOS Y POSICIONES NUEVOS INICIO*/
+.ingresos{
+    background-color: rgb(185, 185, 185);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 10px 10px;
+    margin: 15px 15px;
+    @media (max-width:767px){
+        width: 200px;
+    }
+    
+    &__nuevo{
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 10px 10px;
+        
+        justify-content: space-between;
+        align-items:center;
+        align-content: center;
+        width: 200px;
+        height: 100%;
+
+        @media (max-width:767px){
+            width: 374px;
+        }
+        @media (min-width:1200px){
+            width: 250px;
+        }
+
+    
+    }
+    &__img{
+        width: 600px;
+        max-width: 100%;
+        
+    }
+    &__contenido{
+        padding: 10px;
+        display: flex;
+        flex-direction: wrap;
+        justify-content: space-around;
+        height: 80px;
+        font-size: 16px;
+        text-align: center;
+    }
+}
+/*FIN CAJAS DE INGRESOS Y POSICIONES NUEVOS INICIO*/
+
+                /*PRODUCTOS*/
+
+.card{
+    justify-content: center;
+    text-align: center;
+    height: 500px;
+    margin: 10px 10px;
+    img{
+        width: 60%;
+    }
+    
+
+}
+
+                    /* PESTAÑA AYUDA Y CONTENIDO*/
+.accordion{
+    margin: 40px 40px;
+}
+.accordion-item{
+    padding: 20px;
+}
+.accordion-body{
+    p{
+        color: red;
+        font-size: 20px;
+    }
+
+}
+
+                    /*PESTAÑA CONTACTO Y CONTENIDO*/
+
+                    /*IMAGEN PRINCIPAL DE CONTACTO*/
+#imagen-Contacto{
+    background-image: url(../recursos/fondo-contacto.jfif);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: grid;
+    grid-template-areas:
+        "vacio3 contacto vacio4"
+        "vacio3 contacto1 vacio4"
+        "vacio3 texto1 vacio4";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    color: white; 
+    margin: auto;
+}
+
+
+
+#cajacontacto{
+    width: 100%;
+    border: none
+}
+
+.form label {
+    font-size: 13px;
+    margin-left: 2px
+}
+
+.form-control {
+    height: 45px;
+    border: 2px solid #BF2C1F
+}
+
+
+.form-control:focus {
+    box-shadow: none;
+    border: 2px solid #BF2C1F
+}
+
+.phone {
+    position: relative
+}
+
+.phone input {
+    padding-left: 29px
+}
+
+.phone i {
+    position: absolute;
+    top: 17px;
+    left: 10px;
+    color: #BF2C1F
+}
+
+.button {
+    height: 50px;
+    background-color: #BF2C1F
+}
+
+.button:hover {
+    background-color: #BF2C1F
+}
+
+
+
+#contacto{
+    grid-area: contacto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 70px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 200px;
+    
+    
+}
+            /*SUBTITULO IMAGEN PRINCIPAL DE CONTACTO*/
+#contacto1{
+    grid-area: contacto1;
+    font-size: 15px;
+    justify-content: center;
+    text-align: center;
+}
+
+            /*PARRAFO IMAGEN PRINCIPAL DE INICIO*/
+
+#texto1{
+    grid-area: texto1;
+    font-size: 15px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+    
+}
+
+    /*DISEÑO DE FOOTER*/
+
+.footer-dark{
+    background-color:#BF2C1F ;
+    a{
+        text-decoration: none;
+    }
+    &__item {
+        text-align:center;
+        padding-bottom:20px;
+    }
+    &__copyright {
+        text-align:center;
+        padding-top:24px;
+        opacity:0.3;
+        font-size:13px;
+        margin-bottom:0;
+    }
+    &__text{
+        margin-bottom:36px;
+        text-align:center;
+        padding-bottom:20px;
+        p{
+            margin-bottom: 0;
+        }
+    
+    }
+}
+@media (max-width:767px) {
+    .footer-dark .item.text {
+    margin-bottom:0;
+    }
+}
+
+
+
