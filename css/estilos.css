@@ -52,7 +52,9 @@ body h2 {
   height: 500px;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "vacio1 titulo vacio2" "vacio1 texto vacio2" "vacio1 vacio3 vacio2";
+      grid-template-areas: "vacio1 titulo vacio2"
+                            "vacio1 texto vacio2"
+                            "vacio1 vacio3 vacio2";
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   -ms-grid-rows: (1fr)[3];
@@ -139,7 +141,9 @@ body h2 {
   height: 500px;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "vacio3 contacto vacio4" "vacio3 contacto1 vacio4" "vacio3 texto1 vacio4";
+      grid-template-areas: "vacio3 contacto vacio4"
+  "vacio3 contacto1 vacio4"
+  "vacio3 texto1 vacio4";
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   -ms-grid-rows: (1fr)[3];
