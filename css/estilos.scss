@@ -10,7 +10,12 @@ body {
     font-family: 'Red Rose', cursive;
     background-image: linear-gradient(0deg, #d8d8d8, white );
     background-attachment: fixed;
+    h2{
+        margin: 15px;
+    
+    }
 }
+
 .navbar{
     background-color: #0D0D0D;
     
@@ -40,91 +45,48 @@ body {
 #imagen-Principal{
     
     background-image: url(../recursos/fondo-pantalla-principal.jpg);
-    
     background-size: cover;
     background-position: center;
     height: 500px;
     display: grid;
     grid-template-areas:
-        "vacio1 titulo1 vacio2"
         "vacio1 titulo vacio2"
-        "vacio1 texto vacio2";
+        "vacio1 texto vacio2"
+        "vacio1 vacio3 vacio2";
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     color: white; 
     margin: auto;
+    #titulo{
+        grid-area: titulo;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        font-size: 70px;
+        justify-content: center;
+        text-align: center;
+        margin-top: 200px;
+    }
+    #texto{
+        grid-area: texto;
+        font-size: 15px;
+        justify-content: center;
+        text-align: center;
+        margin-top: 50px;
+    }
     
     
 }
 /* TITULO IMAGEN PRINCIPAL DE INICIO*/
-#titulo{
-    grid-area: titulo;
-    font-size: 70px;
-    justify-content: center;
-    text-align: center;
-    padding: 30px;
-    
-}
-/*PARRAFO IMAGEN PRINCIPAL DE INICIO*/
-#texto{
-    grid-area: texto;
-    font-size: 15px;
-    justify-content: center;
-    text-align: center;
 
-}
+/*PARRAFO IMAGEN PRINCIPAL DE INICIO*/
+
 
 /*CAJAS DE INGRESOS Y POSICIONES NUEVOS INICIO*/
 .ingresos{
-    background-color: rgb(185, 185, 185);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    padding: 10px 10px;
-    margin: 15px 15px;
-    @media (max-width:767px){
-        width: 200px;
-    }
-    
-    &__nuevo{
-        background-color: rgb(255, 255, 255);
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        margin: 10px 10px;
-        
-        justify-content: space-between;
-        align-items:center;
-        align-content: center;
-        width: 200px;
-        height: 100%;
-
-        @media (max-width:767px){
-            width: 374px;
-        }
-        @media (min-width:1200px){
-            width: 250px;
-        }
-
-    
-    }
-    &__img{
-        width: 600px;
-        max-width: 100%;
-        
-    }
-    &__contenido{
-        padding: 10px;
-        display: flex;
-        flex-direction: wrap;
-        justify-content: space-around;
-        height: 80px;
-        font-size: 16px;
-        text-align: center;
-    }
+    background-color: rgb(235, 232, 232);
 }
+/*
 /*FIN CAJAS DE INGRESOS Y POSICIONES NUEVOS INICIO*/
 
                 /*PRODUCTOS*/
@@ -137,8 +99,6 @@ body {
     img{
         width: 60%;
     }
-    
-
 }
 
                     /* PESTAÑA AYUDA Y CONTENIDO*/
@@ -153,9 +113,7 @@ body {
         color: red;
         font-size: 20px;
     }
-
 }
-
                     /*PESTAÑA CONTACTO Y CONTENIDO*/
 
                     /*IMAGEN PRINCIPAL DE CONTACTO*/
@@ -173,14 +131,34 @@ body {
     grid-template-rows: repeat(3, 1fr);
     color: white; 
     margin: auto;
+    #contacto{
+        grid-area: contacto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        font-size: 70px;
+        justify-content: center;
+        text-align: center;
+        margin-top: 200px;    
+    }
+    #contacto1{
+        grid-area: contacto1;
+        font-size: 15px;
+        justify-content: center;
+        text-align: center;
+    }
+    #texto1{
+        grid-area: texto1;
+        font-size: 15px;
+        justify-content: center;
+        text-align: center;
+        margin-top: 50px; 
+    }
 }
 
+            /*IMAGEN PRINCIPAL DE CONTACTO*/
 
-
-#cajacontacto{
-    width: 100%;
-    border: none
-}
+            /*CUADRO DE FORMULARIO*/
 
 .form label {
     font-size: 13px;
@@ -200,11 +178,11 @@ body {
 
 .phone {
     position: relative
+    input {
+        padding-left: 29px
+    }
 }
 
-.phone input {
-    padding-left: 29px
-}
 
 .phone i {
     position: absolute;
@@ -222,40 +200,9 @@ body {
     background-color: #BF2C1F
 }
 
+            /*FINAL CUADRO DE FORMULARIO*/
 
-
-#contacto{
-    grid-area: contacto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    font-size: 70px;
-    justify-content: center;
-    text-align: center;
-    margin-top: 200px;
-    
-    
-}
-            /*SUBTITULO IMAGEN PRINCIPAL DE CONTACTO*/
-#contacto1{
-    grid-area: contacto1;
-    font-size: 15px;
-    justify-content: center;
-    text-align: center;
-}
-
-            /*PARRAFO IMAGEN PRINCIPAL DE INICIO*/
-
-#texto1{
-    grid-area: texto1;
-    font-size: 15px;
-    justify-content: center;
-    text-align: center;
-    margin-top: 50px;
-    
-}
-
-    /*DISEÑO DE FOOTER*/
+            /*DISEÑO DE FOOTER*/
 
 .footer-dark{
     background-color:#BF2C1F ;
@@ -289,5 +236,5 @@ body {
     }
 }
 
-
+            /*FINAL DISEÑO DE FOOTER*/
 
